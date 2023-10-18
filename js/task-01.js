@@ -8,7 +8,7 @@ const list = document.querySelectorAll('.item');
 let result = 0;
 list.forEach(elem => {
   result++;
-  const title = elem.querySelector('h2').innerHTML;
+  const title = elem.firstElementChild.innerHTML;
   const itemsLength = elem.querySelectorAll('li').length;
   console.log(`
 Category: ${title}
